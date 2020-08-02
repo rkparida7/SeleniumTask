@@ -14,6 +14,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.Select;
 
 import com.maveric.core.driver.Driver;
 import com.maveric.core.testng.listeners.ReportListener;
@@ -60,6 +61,21 @@ public class WebActions {
 	public void scrollDown() {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0,350)", "");
+	}
+	public void sendkeym(By value1, String value2) {
+		driver.findElement(value1).sendKeys(value2);
+	}
+	public void clickm(By value1) throws InterruptedException {
+		driver.findElement(value1).click();
+		Thread.sleep(3500);
+	}
+	public void dropdownm(By by, String value2) {
+		Select sel = new Select(driver.findElement(by));
+//		sel.selectByValue(value2);
+		sel.selectByVisibleText(value2);
+	}
+	public String findText(By by) {
+		return driver.findElement(by).getText();
 	}
 
 	public void doubleClickAction(WebElement value) {
@@ -109,6 +125,7 @@ public class WebActions {
 		
 //		driver.switchTo().window(parent);
 	}
+	
 	public void tableRead() {
 		String row = "//div[@class='rt-tbody']/div/div";
 		String col = "//div[@class='rt-tbody']/div[1]/div[1]/div";

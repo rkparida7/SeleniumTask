@@ -5,6 +5,7 @@ import static com.maveric.core.utils.reporter.Report.log;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -27,7 +28,7 @@ public class b_InteractionsPage extends WebActions {
 	private final By resizableEntry = By.xpath("//span[contains(text(),'Resizable')]");
 	private final By droppableEntry = By.xpath("//span[contains(text(),'Droppable')]");
 	private final By dragabbleEntry = By.xpath("//span[contains(text(),'Dragabble')]");
-//	private final By revertDrag = By.xpath("//a[@id='droppableExample-tab-revertable']");
+	private final By axis = By.xpath("//a[contains(text(),'Axis Restricted')]");
 //	private final By  = By.xpath("");
 	
 
@@ -114,6 +115,7 @@ public class b_InteractionsPage extends WebActions {
 	    	
 	    	return this;
 	    }
+
 	public b_InteractionsPage Resizablee() throws InterruptedException {
     	Thread.sleep(1000);
 //    	driver.findElement(interactionHead).click();
@@ -177,10 +179,19 @@ public class b_InteractionsPage extends WebActions {
     	
     	WebElement dragbox = driver.findElement(By.xpath("//div[@id='dragBox']"));
     	WebElement dragcursorStyle = driver.findElement(By.xpath("//a[@id='draggableExample-tab-cursorStyle']"));
+    	WebElement xAxis = driver.findElement(By.xpath("//div[contains(text(),'Only X')]"));
+    	WebElement yAxis = driver.findElement(By.xpath("//div[contains(text(),'Only Y')]"));
+    	
     	
     	dragAndDropMethod(dragbox, dragcursorStyle);
-    	Thread.sleep(4000);
+    	Thread.sleep(2000);
     	
+    	driver.findElement(axis).click();Thread.sleep(2000);
+    	new Actions(driver).dragAndDropBy(xAxis, 150, 0).build().perform();
+    	Thread.sleep(2000);
+    	
+    	new Actions(driver).dragAndDropBy(yAxis, 0, 150).build().perform();
+    	Thread.sleep(2000);
     	logScreenshot("clicking successful");
     	
     	return this;

@@ -51,10 +51,6 @@ public class a_ElementsPage extends WebActions {
 	private final By webSalary = By.xpath("//input[@placeholder='Salary']");
 	private final By webDepart = By.xpath("//input[@placeholder='Department']");
 	private final By registrationForm = By.xpath("//div[contains(text(),'Registration Form')]");
-//	private final By  = By.xpath("");
-//	private final By  = By.xpath("");
-//	private final By  = By.xpath("");
-//	private final By  = By.xpath("");
 	
 	
 	

@@ -1,0 +1,314 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-08-02T17:08:21.376Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.maveric.core.cucumber.CucumberListener.before(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 29,
+        "name": "To do a fund transfer in ParaBank Site",
+        "description": "",
+        "id": "parabank-task;to-do-a-fund-transfer-in-parabank-site;;2",
+        "after": [
+          {
+            "output": [
+              "02-Aug-2020 10:38:48 PM : \u003ca target\u003d_blank href\u003dscreenshots/screenshot_4.png\u003eFailure Screenshot  \u003c/a\u003e"
+            ],
+            "result": {
+              "duration": 341000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.maveric.core.cucumber.CucumberListener.after(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6294000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Launch the paraBank Site",
+            "match": {
+              "location": "com.internetapp.pages.c_ParaBankCucumber.launch_the_paraBank_Site()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "output": [
+              "02-Aug-2020 10:38:29 PM : \u003ca target\u003d_blank href\u003dscreenshots/screenshot_1.png\u003eData Entered successfully  \u003c/a\u003e",
+              "02-Aug-2020 10:38:34 PM : \u003ca target\u003d_blank href\u003dscreenshots/screenshot_2.png\u003eSignup in successfully  \u003c/a\u003e"
+            ],
+            "result": {
+              "duration": 15148000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "create New IDs \"MavUserO4\" and \"PASSWORD1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"MavUserO4\"",
+                  "offset": 15
+                },
+                {
+                  "val": "\"PASSWORD1\"",
+                  "offset": 31
+                }
+              ],
+              "location": "com.internetapp.pages.c_ParaBankCucumber.create_New_IDs(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "output": [
+              "02-Aug-2020 10:38:43 PM : \u003ca target\u003d_blank href\u003dscreenshots/screenshot_3.png\u003elogeed in  \u003c/a\u003e"
+            ],
+            "result": {
+              "duration": 5519000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Enter the User Name and password and click login button \"MavUserO4\" and \"PASSWORD1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"MavUserO4\"",
+                  "offset": 56
+                },
+                {
+                  "val": "\"PASSWORD1\"",
+                  "offset": 72
+                }
+              ],
+              "location": "com.internetapp.pages.c_ParaBankCucumber.enter_the_User_Name_and_password_and_click_login_button_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Navigate to Open New Account section",
+            "match": {
+              "location": "com.internetapp.pages.c_ParaBankCucumber.navigate_to_Open_New_Account_section()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[contains(text(),\u0027Open New Account\u0027)]\"}\n  (Session info: chrome\u003d84.0.4147.105)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027MAVERICSYSTEMS\u0027, ip: \u0027192.168.29.222\u0027, os.name: \u0027Windows 8.1\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.3\u0027, java.version: \u00271.8.0_171\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\\Users\\Rkparida\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:60472}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 991b4e8237780c7d447e9b03d2322b14\n*** Element info: {Using\u003dxpath, value\u003d//a[contains(text(),\u0027Open New Account\u0027)]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat com.maveric.core.utils.web.WebActions.clickm(WebActions.java:69)\r\n\tat com.internetapp.pages.c_ParaBankCucumber.select_the_Account_Type_and_Click_Open_new_accountButton(c_ParaBankCucumber.java:95)\r\n\tat ✽.Select the Account Type \"SAVINGS\" and Click Open new accountButton(file:///C:/Users/Rkparida/Desktop/SCUBA/20%20June/NewTAFUpdated/./src/test/resources/features/paraBankCucumber.feature:11)\r\n",
+              "duration": 26000000,
+              "status": "failed"
+            },
+            "line": 11,
+            "name": "Select the Account Type \"SAVINGS\" and Click Open new accountButton",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"SAVINGS\"",
+                  "offset": 24
+                }
+              ],
+              "location": "com.internetapp.pages.c_ParaBankCucumber.select_the_Account_Type_and_Click_Open_new_accountButton(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "A New account is Created successfully",
+            "match": {
+              "location": "com.internetapp.pages.c_ParaBankCucumber.a_New_account_is_Created_successfully()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "Click the Transfer Funds option",
+            "match": {
+              "location": "com.internetapp.pages.c_ParaBankCucumber.click_the_Transfer_Funds_option()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "Enter the Amount \"100\" to be transferred",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"100\"",
+                  "offset": 17
+                }
+              ],
+              "location": "com.internetapp.pages.c_ParaBankCucumber.enter_the_Amount_to_be_transferred(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "Select required the Account number from dropdown",
+            "match": {
+              "location": "com.internetapp.pages.c_ParaBankCucumber.select_required_the_Account_number_from_dropdown()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "Click TransferButton",
+            "match": {
+              "location": "com.internetapp.pages.c_ParaBankCucumber.click_TransferButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "Fund transfer should done successfully",
+            "match": {
+              "location": "com.internetapp.pages.c_ParaBankCucumber.fund_transfer_should_done_successfully()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "Click the Accounts Overview Option",
+            "match": {
+              "location": "com.internetapp.pages.c_ParaBankCucumber.click_the_Accounts_Overview_Option()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "Select the corresponding Account from the table",
+            "match": {
+              "location": "com.internetapp.pages.c_ParaBankCucumber.select_the_corresponding_Account_from_the_table()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "Selelct the currentDate \"08-01-2020\" from the table",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"08-01-2020\"",
+                  "offset": 24
+                }
+              ],
+              "location": "com.internetapp.pages.c_ParaBankCucumber.Selelct_the_current_date(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "Details of the Account is displayed",
+            "match": {
+              "location": "com.internetapp.pages.c_ParaBankCucumber.details_of_the_Account_is_displayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "Account activity details displayed",
+            "match": {
+              "location": "com.internetapp.pages.c_ParaBankCucumber.account_activity_details_displayed()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "Click on Logout option",
+            "match": {
+              "location": "com.internetapp.pages.c_ParaBankCucumber.click_on_Logout_option()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "Successfully logged out from Parabank Site",
+            "match": {
+              "location": "com.internetapp.pages.c_ParaBankCucumber.successfully_logged_out_from_Parabank_Site()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ParaBankTest"
+          },
+          {
+            "name": "@tag1"
+          }
+        ]
+      }
+    ],
+    "name": "ParaBank Task",
+    "description": "  login to Parabank site Open a account and do a Fund transfer",
+    "id": "parabank-task",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/paraBankCucumber.feature",
+    "tags": [
+      {
+        "name": "@ParaBankTest",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
