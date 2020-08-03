@@ -26,7 +26,7 @@
 		<rest.assured.version>4.3.0</rest.assured.version>
 		<!-- surefire properties -->
 		<suite>
-			cucumber_web.xml
+			seleniumTask.xml
 		</suite>
 		<suiteFile>./src/test/resources/test_suites/${suite}</suiteFile>
 	</properties>
