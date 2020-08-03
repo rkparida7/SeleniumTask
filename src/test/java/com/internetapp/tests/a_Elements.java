@@ -13,6 +13,7 @@ public class a_Elements extends BaseTest {
 	@Test(groups = { "Force1" })
 	public void Test1() throws InterruptedException, IOException {
 // Sl no 1
+		System.out.println("----> ElementsPage task Initiated");
 		System.out.println("Start");
 		new a_ElementsPage().navigate("https://demoqa.com/")
 				.testBox("Rutukanta", "rutukantap@maveric-systems.com", "Chennai", "India")
@@ -24,12 +25,13 @@ public class a_Elements extends BaseTest {
 				.upDownload() // AutoIT fileuploader
 				.LinksOps();
 
-		System.out.println("---- ElementsPage task Comleted");
+		System.out.println("----> ElementsPage task Comleted");
 	}
 
 	@Test(groups = { "Force2" })
 	public void Test4() throws InterruptedException, IOException {
 // Sl no 4
+		System.out.println("----> Interactions task Initiated");
 		new b_InteractionsPage().navigate("https://demoqa.com/")
 				.sorttablee()
 				.selecttablee()
@@ -37,7 +39,7 @@ public class a_Elements extends BaseTest {
 				.Droppablee()
 				.Dragabblee();
 
-		System.out.println("---- Interactions task Comleted");
+		System.out.println("----> Interactions task Comleted");
 	}
 
 }
